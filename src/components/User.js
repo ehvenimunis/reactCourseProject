@@ -5,11 +5,12 @@ class User extends Component {
     constructor(probs){
         super(probs);
         this.state = {
-            isvisible : true
+            isvisible : true,
+            clour : 'red'
         }
     }
     onClickEvent(e){
-        this.setState({isvisible : !this.state.isvisible})
+        this.setState({isvisible : !this.state.isvisible});
     }
     render() {
         // Destructing
@@ -19,8 +20,8 @@ class User extends Component {
             <div className = "col-md-8 mb-4">
                 <div className = "card">
                     <div className="card-header d-flex justify-content-between">
-                        <h4 className = "d-inline" onClick = {this.onClickEvent.bind(this)}>İsim : {name} <i className="fa fa-check-square" aria-hidden="true" ></i></h4>
-                        <i className = "far fa-trash-alt" styele = {{cursor: "pointer"}}></i>
+                        <h4 className = "d-inline" onClick = {this.onClickEvent.bind(this)}>İsim : {name} <i className="fa fa-check-square" style = {{color : this.state.clour}} aria-hidden="true" ></i></h4>
+                        <i className = "far fa-trash-alt" style = {{color : 'red'}}></i>
                     </div>
                 </div>
                 {
