@@ -12,6 +12,7 @@ class App extends Component{
     return (
       <div className="container">
         <h4 className="header">App Companent</h4>
+        <hr/>
         <User></User>
         <User></User>
         <User></User>
