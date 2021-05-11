@@ -1,6 +1,7 @@
 import { computeHeadingLevel } from '@testing-library/dom';
 import React, { Component } from 'react';
 import './App.css';
+import Navbar from './components/Navbar';
 import User from "./components/User";
 
 class App extends Component{
@@ -11,12 +12,8 @@ class App extends Component{
 
     return (
       <div className="container">
-        <h4 className="header">App Companent</h4>
+        <Navbar/>
         <hr/>
-        <User></User>
-        <User></User>
-        <User></User>
-        <User></User>
         <User></User>
       </div>
     );
