@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
 
 class User extends Component {
+    constructor(probs){
+        super(probs);
+        this.state = {
+            isvisible : false
+        }
+    }
     render() {
-
         // Destructing
         const {name, department, salary} = this.props;
+        const {isvisible} = this.state;
         return (
             <div className = "col-md-8 mb-4">
                 <div className = "card">
@@ -13,11 +19,13 @@ class User extends Component {
                         <i className = "far fa-trash-alt" styele = {{cursor: "pointer"}}></i>
                     </div>
                 </div>
-
-                <div className="card-body">
+                {
+                    isvisible ?  <div className="card-body">
                     <p className="card-text">Departman : {department}</p>
                     <p className="card-text">Salary : {salary}</p>
-                </div>
+                </div> : null
+                }
+
 
             </div>
         )
