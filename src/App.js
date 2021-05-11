@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 import './App.css';
 import User from "./components/User";
 
-
-
 class App extends Component{
   render()
   {
@@ -12,7 +10,8 @@ class App extends Component{
     const isAught = true;
 
     return (
-      <div className="App">
+      <div className="container">
+        <h4 className="header">App Companent</h4>
         <User></User>
         <User></User>
         <User></User>
