@@ -9,9 +9,7 @@ class User extends Component {
         }
     }
     onClickEvent(e){
-        console.log(e.target);
-        console.log("test");
-        console.log(this);
+        this.setState({isvisible : !this.state.isvisible})
     }
     render() {
         // Destructing
