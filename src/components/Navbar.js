@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Navbar() {
+function Navbar(probs) {
     return (
         <div>
-            <h3>User App</h3>
+            <h3>{probs.title}</h3>
         </div>
     )
 }

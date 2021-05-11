@@ -12,9 +12,10 @@ class App extends Component{
 
     return (
       <div className="container">
-        <Navbar/>
+        <Navbar title = "User App"/>
         <hr/>
-        <User></User>
+        <User name = "Fatih"/>
+        <User name = "Oğuz"/>
       </div>
     );
   }

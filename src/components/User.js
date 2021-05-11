@@ -5,7 +5,7 @@ class User extends Component {
         return (
             <div>
                 <ul>
-                    <li>İsim : Salih</li>
+                    <li>İsim : {this.props.name}</li>
                     <li>Departman : Software</li>
                     <li>Maaş : 9000</li>
                 </ul>
