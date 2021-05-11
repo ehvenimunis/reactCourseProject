@@ -14,8 +14,16 @@ class App extends Component{
       <div className="container">
         <Navbar title = "User App"/>
         <hr/>
-        <User name = "Fatih"/>
-        <User name = "Oğuz"/>
+        <User
+         name = "Fatih"
+         department = "Bilişim"
+         salary = "150"
+         />
+        <User 
+        name = "Oğuz"
+        department = "Servis"
+        salary = "600"
+        />
       </div>
     );
   }
