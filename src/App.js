@@ -1,13 +1,30 @@
-
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>merhaba</h1>
-      <h1>buraya sadece bir tane div yazabilirsin</h1>
-    </div>
-  );
+
+
+class App extends Component{
+  render()
+  {
+    const test = 34;
+    const isAught = true;
+
+    return (
+      <div className="App">
+        <h4> { 1 + 1 } </h4>
+        <h4> { "Salih".toUpperCase() } </h4>
+        <h4>{test}</h4>
+
+        <div>
+          {
+            isAught ? <p>Kullanıcı Kayıtlı</p>
+            : null
+          }
+        </div>
+      </div>
+    );
+  }
+
 }
 
 export default App;
