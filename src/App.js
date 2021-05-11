@@ -1,5 +1,7 @@
+import { computeHeadingLevel } from '@testing-library/dom';
 import React, { Component } from 'react';
 import './App.css';
+import User from "./components/User";
 
 
 
@@ -11,20 +13,14 @@ class App extends Component{
 
     return (
       <div className="App">
-        <h4> { 1 + 1 } </h4>
-        <h4> { "Salih".toUpperCase() } </h4>
-        <h4>{test}</h4>
-
-        <div>
-          {
-            isAught ? <p>Kullanıcı Kayıtlı</p>
-            : null
-          }
-        </div>
+        <User></User>
+        <User></User>
+        <User></User>
+        <User></User>
+        <User></User>
       </div>
     );
   }
-
 }
 
 export default App;
