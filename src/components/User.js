@@ -8,8 +8,9 @@ class User extends Component {
         return (
             <div>
                 <ul>
-                    <li>İsim : {name}</li>
-                    <li>Departman : {department}</li>
+                    <li>İsim : {name} <i className="fa fa-check-square" aria-hidden="true"></i></li>
+                    <li>Departman : {department} <i className="fa fa-window-close-o" aria-hidden="true"></i>
+</li>
                     <li>Maaş : {salary}</li>
                 </ul>
             </div>
